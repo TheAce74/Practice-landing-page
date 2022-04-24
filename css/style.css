@@ -1,0 +1,611 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .8);
+    background-color: rgb(80, 80, 80);
+    color: rgb(232, 211, 185);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    line-height: 1.3;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: .4em 0;
+}
+
+h2 {
+    line-height: 1.25;
+    font-size: 2.8rem;
+    font-weight: 750;
+    margin: .35em 0;
+}
+
+h3 {
+    line-height: 1.2;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: .3em 0;
+}
+
+h4 {
+    line-height: 1.15;
+    font-size: 2rem;
+    font-weight: 650;
+    margin: .25em 0;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin: .5em 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, iframe, video, audio {
+    width: 100%;
+}
+
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: 1.125rem;
+    margin: 0;
+    padding:0;
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+code, pre, blockquote, cite {
+        font-size: 1.125rem;
+        font-weight: normal;
+        margin: .5em 0;
+        padding: .6em;
+}
+
+table, td, th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 1.125rem;
+    padding: .6em;
+}
+
+caption {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin: .2em 0;
+}
+
+/* Home Page */
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    padding-top: 1.5em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: rgb(51, 51, 51, .98);
+    display: flex;
+    z-index: 120;
+}
+
+header img {
+    width: 27%;
+    margin: auto;
+    padding-bottom: .5em;
+}
+
+.contain {
+    padding: .2em;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: rgba(232, 211, 185, 1);
+    height: .4em;
+    width: 1.7em;
+    margin-top: .16em;
+    transition: .5s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -4px);
+}
+
+header nav {
+    position: fixed;
+    right: -500px;
+    top: 4.2em;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, .9);
+    width: 50%;
+    z-index: 100;
+    transition: .8s;
+}
+
+header nav ul {
+    margin: auto;
+    width: 30%;
+    margin-top: 3em;
+}
+
+header nav ul li {
+    padding-top: 3em;
+}
+
+header nav ul li a {
+    padding: .5em;
+}
+
+header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
+    color: rgb(80, 80, 80);
+}
+
+/* Home Section */
+
+#home {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(1\).jpeg");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(1\).jpeg");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(1\).jpeg");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(118, 123, 141, 0.7)), url("/images/images\ \(1\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 15em;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.4rem;
+}
+
+/* Anime Section */
+
+#anime {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(2\).jpeg");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(2\).jpeg");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/images\ \(2\).jpeg");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(118, 123, 141, 0.7)), url("/images/images\ \(2\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+}
+
+#anime .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#anime .container {
+    width: 90%;
+    margin: auto;
+}
+
+#anime .container p {
+    font-size: 1.8rem;
+}
+
+#anime .container .heroBtn {
+    border: 1px solid black;
+    color: rgb(232, 211, 185);
+    padding: .8em;
+    transition: .8s;
+}
+
+#anime .container .heroBtn:hover {
+    border: 1px solid rgba(232, 211, 185, 1);
+    color: rgb(80, 80, 80);
+    background-color: rgba(232, 211, 185, 1);
+}
+
+/* About */
+
+#about {
+    background: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/images.jpeg");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/images.jpeg");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/images.jpeg");
+    background: -o-linear-gradient(rgba(4, 9, 30, .8), rgba(118, 123, 141, 0.8)), url("/images/images.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+}
+
+#about .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#about .container p {
+    font-size: 1.4rem;
+    margin-top: 1.5em;
+}
+
+#about .container a {
+    display: block;
+}
+
+
+#about .container .heroBtn {
+    border: none;
+    color: rgb(232, 211, 185);
+    padding: 3em .1em;
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    background: -radial-gradient(rgba(54, 13, 4, .5), rgba(246, 203, 143, .5), rgba(181, 78, 38, .5), rgba(227, 224, 218, .5));
+    background: -webkit-radial-gradient(rgba(54, 13, 4, .5), rgba(246, 203, 143, .5), rgba(181, 78, 38, .5), rgba(227, 224, 218, .5));
+    background: -moz-radial-gradient(rgba(54, 13, 4, .5), rgba(246, 203, 143, .5), rgba(181, 78, 38, .5), rgba(227, 224, 218, .5));
+    background: -o-radial-gradient(rgba(54, 13, 4, .5), rgba(246, 203, 143, .5), rgba(181, 78, 38, .5), rgba(227, 224, 218, .5));
+}
+
+#about .container .heroBtn:hover {
+    transition: .5s linear;
+    transform: scale(1.1);    
+}
+
+/* Home Page Media Queries */
+/* For Tablets */
+
+@media (max-width:768px) and (min-width:570px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        width: 18%;
+        margin: auto;
+    }
+
+    .contain {
+        margin-top: -1.3em;
+    }
+
+    header nav ul li {
+        padding-top: 5em;
+    }
+
+    header nav ul li a {
+        padding: 1em;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 1.7em;
+        margin-top: .27em;
+    }
+    
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-10px, -5px);
+    }
+
+    #about .container .heroBtn {
+        padding: 6em .1em;       
+    }
+}
+
+/* For Desktop Computers */
+
+@media (min-width:769px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    header img {
+        width: 15%;
+        margin: auto;
+    }
+
+    .contain {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        height: 100%;
+        right: 0;
+        margin-top: -1em;
+    }
+    
+    header nav ul {
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        padding-top: 0;
+    }
+    
+    header nav ul li a {
+        padding: 0;
+    }
+  
+    #anime .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #anime .container {
+        transform: translateY(10em);
+        width: 50%;
+        margin: auto;
+    }
+
+    #about .container .heroBtn {
+        padding: 10em 0;       
+    }
+}
+
+/* Anime Page */
+/* Home Section */
+
+#animehome {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(118, 123, 141, 0.7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 15em;
+    text-align: center;
+}
+
+#animehome p {
+    font-size: 1.4rem;
+}
+
+/* Anime Section */
+
+#animeanime {
+    width: 100%;
+    padding-top: 5em;
+    position: relative;
+}
+
+#animeanime h2 {
+    animation: slider 8s linear infinite;
+    width: 100%;
+    position: absolute;
+    top: 1em;
+}
+
+@keyframes slider {
+    0% {transform: translateX(-100%);}
+    50% {transform: translateX(0%);}
+    100% {transform: translateX(100%);}
+}
+
+#animeanime .flex {
+    flex-direction: column;
+}
+
+#animeanime .flex .card {
+    padding: 0;
+    position: relative;
+    width: 11em;
+    height: 12em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#animeanime .flex .card p {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(25px);
+    z-index: 30;
+    transition: .7s;
+    color: transparent;
+}
+
+#animeanime .flex .card img:hover {
+    opacity: .3;
+}
+
+#animeanime .flex .card:hover p {
+    color: rgba(232, 211, 185, 1);
+    transform: translate(26px, -80px);
+}
+
+#animeanime .flex .card img {
+    border-radius: 1.5em;
+    height: 12em;
+    width: 11em;
+}
+
+/* About */
+
+#animeabout {
+    background: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/baraou-no-souretsu.png");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/baraou-no-souretsu.png");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .8)), url("/images/baraou-no-souretsu.png");
+    background: -o-linear-gradient(rgba(4, 9, 30, .8), rgba(118, 123, 141, 0.8)), url("/images/baraou-no-souretsu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+}
+
+#animeabout .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#animeabout .container p {
+    font-size: 1.4rem;
+    margin-top: 1.5em;
+}
+
+#animeabout .container a {
+    display: block;
+}
+
+
+#animeabout .container .heroBtn {
+    border: none;
+    color: rgb(232, 211, 185);
+    padding: 3em .1em;
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    background: -radial-gradient(rgba(139, 161, 185, .5), rgba(183, 173, 208, .5), rgba(31, 91, 149, .5), rgba(36, 52, 67, .5));
+    background: -webkit-radial-gradient(rgba(139, 161, 185, .5), rgba(183, 173, 208, .5), rgba(31, 91, 149, .5), rgba(36, 52, 67, .5));
+    background: -moz-radial-gradient(rgba(139, 161, 185, .5), rgba(183, 173, 208, .5), rgba(31, 91, 149, .5), rgba(36, 52, 67, .5));
+    background: -o-radial-gradient(rgba(139, 161, 185, .5), rgba(183, 173, 208, .5), rgba(31, 91, 149, .5), rgba(36, 52, 67, .5));
+}
+
+#animeabout .container .heroBtn:hover {
+    transition: .5s linear;
+    transform: scale(1.1);    
+}
+
+/* Anime Page Media Queries */
+/* For Tablets */
+
+@media (max-width:768px) and (min-width:570px) {
+    #animeabout .container .heroBtn {
+        padding: 6em .1em;       
+    }
+}
+
+/* For Desktop Computers */
+
+@media (min-width:769px) {
+    #animeanime .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    #animeabout .container .heroBtn {
+        padding: 10em 0;       
+    }
+}
+
+/* Special Anime Page */
+
+section.header {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(118, 123, 141, 0.7)), url("/images/shingeki-no-kyojin-the-final-season-part-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+section.header1 {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/1109209.png");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/1109209.png");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("/images/1109209.png");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(118, 123, 141, 0.7)), url("/images/1109209.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+section.summary {
+    width: 85%;
+    margin: auto;
+}
+
+section.summary h2 {
+    text-align: center;
+}
+
+section.summary p {
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+section.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+section.container .card:hover {
+    transform: translateY(10%);
+    transition: .5s;
+}

@@ -1,0 +1,84 @@
+.container {
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.flex {
+    display: flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -ms-flexbox-wrap: wrap;
+    -moz-box-wrap: wrap;
+    -webkit-box-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-gap: 20px;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    border-radius: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2), 0 6px 20px rgba(0, 0, 0, .19);
+    padding: 2em;
+    margin: 1em;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
+    background-color: #777;
+    padding: .5em;
+    margin: .5em;
+}
+
+.heroImg {
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("");
+    background: -webkit-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("");
+    background: -moz-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("");
+    background: -o-linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.heroBtn {
+    background: transparent;
+    border: 1px solid #777;
+    position: relative;
+}
