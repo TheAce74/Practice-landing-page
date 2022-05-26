@@ -428,14 +428,13 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 #animeanime h2 {
     animation: slider 8s linear infinite;
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 1em;
 }
 
 @keyframes slider {
-    0% {transform: translateX(-100%);}
-    50% {transform: translateX(0%);}
-    100% {transform: translateX(100%);}
+    0% {left:0;}
+    100% {right:0;}
 }
 
 #animeanime .flex {
