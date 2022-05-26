@@ -426,7 +426,7 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 }
 
 #animeanime h2 {
-    animation: slider 8s linear infinite;
+    animation: slider 5s linear infinite alternate;
     /*width: 100%;*/
     position: absolute;
     top: 1em;
@@ -434,8 +434,8 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 }
 
 @keyframes slider {
-    from {left:0vw;}
-    to {left: 100vw;}
+    from {left:30vw;}
+    to {left: 70vw;}
 }
 
 #animeanime .flex {
