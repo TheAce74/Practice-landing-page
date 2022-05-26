@@ -14,6 +14,7 @@ body {
     background-color: rgb(80, 80, 80);
     color: rgb(232, 211, 185);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
