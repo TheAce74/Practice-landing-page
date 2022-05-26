@@ -435,7 +435,7 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 
 @keyframes slider {
     from {left:10vw;}
-    to {left: 60vw;}
+    to {left: 45vw;}
 }
 
 #animeanime .flex {
