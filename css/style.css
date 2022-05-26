@@ -14,7 +14,6 @@ body {
     background-color: rgb(80, 80, 80);
     color: rgb(232, 211, 185);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -429,7 +428,7 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 #animeanime h2 {
     animation: slider 8s linear infinite;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 1em;
 }
 
