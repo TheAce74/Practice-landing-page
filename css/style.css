@@ -426,16 +426,16 @@ header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
 }
 
 #animeanime h2 {
-    animation: slider 5s linear infinite alternate;
+    animation: slider 3s linear infinite alternate;
     /*width: 100%;*/
     position: absolute;
     top: 1em;
-    left: 0vw;
+    left: 10vw;
 }
 
 @keyframes slider {
-    from {left:30vw;}
-    to {left: 70vw;}
+    from {left:10vw;}
+    to {left: 60vw;}
 }
 
 #animeanime .flex {
